@@ -1,0 +1,71 @@
+#include<iostream>
+
+using namespace std;
+
+class CodeC{
+
+        private:
+
+            int age;
+            int standard;
+            string F_name;
+            string L_name;
+
+        public:
+            void set_age(int a){
+                age = a;
+            }
+            int get_age() {
+                return age;
+            }
+
+
+            void set_standard(int b) {
+                standard=b;
+            }
+
+            int get_standard() {
+                return standard;
+            }
+
+
+            void set_F_name(string c) {
+                F_name=c;
+            }
+
+            string get_F_name() {
+                return F_name;
+            }
+
+
+            void set_L_name(string d) {
+                L_name=d;
+            }
+
+            string get_L_name() {
+                return L_name;
+            }
+
+};
+
+
+int main()
+{
+    int a,b;
+    string c,d;
+    CodeC obj;
+
+    cin >> a >> c >> d >> b;
+
+    obj.set_age(a);
+    obj.set_standard(b);
+    obj.set_F_name(c);
+    obj.set_L_name(d);
+
+    cout << obj.get_age() << endl <<obj.get_L_name()<<", "<<obj.get_F_name()<< endl << obj.get_standard()<<endl;
+
+    cout <<endl<< obj.get_age() << ","<<obj.get_F_name()<<","<<obj.get_L_name()<<","<< obj.get_standard()<< endl;
+
+   return 0;
+}
+
